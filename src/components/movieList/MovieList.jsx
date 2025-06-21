@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./MovieList.scss";
+import "./movieList.scss";
 import ListItem from "../listItem/ListItem";
 
 export default function MovieList({ movies }) {
