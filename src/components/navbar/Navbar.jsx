@@ -6,7 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-
   const navigate = useNavigate()
 
   const handleNavigate = () => {
