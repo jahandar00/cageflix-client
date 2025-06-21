@@ -1,0 +1,96 @@
+.list {
+    width: 100%;
+    padding: 40px 5vw;
+    box-sizing: border-box;
+    background-color: #141414;
+
+    .listTitle {
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .movieGrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    .loadMoreContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .loadMoreButton {
+        background-color: #e50914;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #b20710;
+        }
+    }
+
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1024px) {
+    .list {
+        padding: 30px 4vw;
+
+        .listTitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .movieGrid {
+            gap: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        padding: 24px 3vw;
+
+        .listTitle {
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .movieGrid {
+            justify-content: center;
+            gap: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list {
+        padding: 20px 2vw;
+
+        .listTitle {
+            font-size: 18px;
+        }
+
+        .movieGrid {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}
