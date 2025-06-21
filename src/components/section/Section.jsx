@@ -3,7 +3,7 @@ import "./section.scss";
 export default function Section() {
     return (
         <div className="featured">
-            <img className="background-image" src="../public/background.png" alt="Background" />
+            <img className="background-image" src="./background.png" alt="Background" />
             <div className="overlay">
                 <h1>The Best Movie Library,<br />Anytime Anywhere.</h1>
                 <p>

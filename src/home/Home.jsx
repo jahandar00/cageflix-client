@@ -11,7 +11,7 @@ export default function Home() {
     const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch("../../movies.json")
+    fetch("./movies.json")
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
