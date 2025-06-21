@@ -1,0 +1,74 @@
+.listItem {
+  position: relative;
+  width: 160px;
+  height: 240px;
+  margin-right: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--main-color);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 100%;
+    overflow: hidden;
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+
+    span,
+    p,
+    .genre {
+      font-size: 12px;
+      color: #ccc;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .genre {
+      font-style: italic;
+      color: #aaa;
+    }
+  }
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+}

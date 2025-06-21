@@ -1,0 +1,39 @@
+.noResults {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ccc;
+  background-color: black;
+  height: 100vh ;
+
+  .icon {
+    font-size: 5rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    padding: 3rem 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .icon {
+      font-size: 3.5rem;
+    }
+  }
+}
