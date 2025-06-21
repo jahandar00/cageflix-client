@@ -15,7 +15,6 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
-        console.log(data)
       })
       .catch((err) => {
         console.error("Failed to fetch movies:", err);
